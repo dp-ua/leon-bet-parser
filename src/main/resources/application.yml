@@ -1,0 +1,13 @@
+#          this.httpRequestHandler = new HttpRequestHandler(3); save count 3
+app:
+  connection:
+    threadCount: 3
+  sports-to-parse: Football,Tennis,Hockey,Basketball
+  base-url: https://leonbets.com
+
+logging:
+  file:
+    name: ./logs/file.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

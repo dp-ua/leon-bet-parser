@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: test
+
+app:
+  connection:
+    threadCount: 1
+  sports-to-parse: Sport1,Sport2,Sport3
+  base-url: https://url.com
+
+logging:
+  level:
+    root: INFO
+    com.dp_ua: DEBUG
+  file: file.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
