@@ -35,7 +35,7 @@ public class HttpRequestHandler {
 
     public Mono<String> fetchDataAsync(String uri) {
         String threadName = Thread.currentThread().getName();
-        log.info("THREAD[{}] Fetching data from uri: {}", threadName, uri);
+        log.debug("THREAD[{}] Fetching data from uri: {}", threadName, uri);
         return webClient.get()
                 .uri(uri)
                 .retrieve()
