@@ -1,11 +1,14 @@
-#          this.httpRequestHandler = new HttpRequestHandler(3); save count 3
 app:
   connection:
     threadCount: 3
-  sports-to-parse: Football,Tennis,Hockey,Basketball
+  sports-to-parse: Football,Tennis,Ice Hockey,Basketball
+  events-to-parse: 2
   base-url: https://leonbets.com
 
 logging:
+  level:
+    root: INFO
+    com.dp_ua: INFO
   file:
     name: ./logs/file.log
   pattern:

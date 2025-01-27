@@ -4,14 +4,15 @@ spring:
 
 app:
   connection:
-    threadCount: 1
+    threadCount: 3
   sports-to-parse: Sport1,Sport2,Sport3
+  events-to-parse: 2
   base-url: https://url.com
 
 logging:
   level:
     root: INFO
-    com.dp_ua: DEBUG
+    com.dp_ua: INFO
   file: file.log
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
