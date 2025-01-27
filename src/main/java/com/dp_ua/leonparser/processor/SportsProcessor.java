@@ -4,7 +4,6 @@ import com.dp_ua.leonparser.entity.League;
 import com.dp_ua.leonparser.filter.SportsFilter;
 import com.dp_ua.leonparser.web.fetcher.DataFetcher;
 import com.dp_ua.leonparser.web.mapper.SportsMapper;
-import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;

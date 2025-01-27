@@ -42,7 +42,7 @@ public class AppConfig {
 
     @Bean
     public HttpRequestHandler httpRequestHandler() {
-        log.info("Creating HttpRequestHandler with baseUrl: {}, connectionThreadCount: {}", baseUrl);
+        log.info("Creating HttpRequestHandler with baseUrl: {}", baseUrl);
         return new HttpRequestHandler(baseUrl, scheduler());
     }
 
